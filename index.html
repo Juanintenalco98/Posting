@@ -1,27 +1,212 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="Es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practica</title>
+    <title>Fresas Crazy!</title>
+
+
+    <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: plum;
+        }
+
+        h1{
+            color: blueviolet;
+            text-align: center;
+        }
+
+        h2{
+            color: pink; 
+        }
+        nav ul{
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+        }    
+
+        nav ul li{
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul{
+            list-style-type: upper-roman;
+            margin-left: 10px;
+        }
+        
+        table{
+            background-color: rgb(253, 255, 252);
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 6px solid #ddd;
+        }
+
+        th{
+            background-color: #d4d3d3;
+            text-align: center;
+            border: 2px solid #090808;
+            padding: 50px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #000000;
+            
+        }
+
+        .container{
+            width: 500px;
+            max-width: 600px;
+            margin: 12px;
+            padding: 45px;
+            background-color: #f6f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+
+        label{
+             display: block;     
+             margin: 10px 0 5px ;                                                                                                                   
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(94, 95, 151);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #9b9999;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1><font size=20 color=red face=arial>pratica html</font></h1>
-    <hr>
-    <h2><font size=25 color=yellow face=verdana>lunes</font><h2>
-    <br>
-    <h3>martes</h3>
-    <br>
-    <h4>miercoles</h4>
-    <br>
-    <h5>jueves</h5>
-    <br>
-    <h6>viernes</h6>
-    <br>
-    <hr>
-    <img src="imagenes/redes sociales.png" width="50%">
-    <hr>
-    <footer>&copy; JUAN CAMILO ORTIZ 2025</footer>
 
+    <header title="Fresas Crazy!">
+        <h1>Bem-vindo a Crazy</h1>
+<hr>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicio">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="Fresas">
+        <h1>Redes</h1><br>
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li> 
+        <h2>Crazy Menú</h2>          
+        </ul>
+    </section><hr>
+
+    <section id="acerca">
+        <table>
+            <thead>
+                <tr>
+                    <th>Crazy Fresas</th>
+                    <th>Productos</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img src="./imagenes/facebook.png" alt="Facebook" width="60px"></th>
+                    <th>Facebook</th>
+                    <th><p align="justify">Facebook es la principal red social que existe en el mundo. </p></th>
+                </tr>
+                <tr>
+                    <th><img src="./imagenes/instagram.png" alt="instagram" width="60px"></th>
+                    <th>Instagram</th>
+                    <th><p align="justify">Instagram es una red social y aplicación móvil gratuita </p></th>
+                </tr>
+                <tr>
+                    <th><img src="./imagenes/twitter.png" alt="twitter" width="60px"></th>
+                    <th>Twitter</th>
+                    <th><p align="justify">Es una herramienta de mensajería social gratuita  </p></th>
+                </tr>
+            </tbody>
+        </table>
+    </section><hr>
+
+<section id="contacto">
+    <h2>Seccion de contacto</h2>
+        <div class="container">
+    <h1>Formulario de Contacto</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="email">Correo electronico:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono">
+
+        <label for="mensaje">Mensaje: </label>
+        <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+        <label for="pais">Pais:</label>
+        <select name="pais" id="pais" required>
+            <option value="co">Colombia</option>
+            <option value="ni">Nicaragua</option>
+             <option value="ni">Peru</option>
+              <option value="ni">Chile</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+        </form>
+    </div><hr>
+    </section>
+
+    <section>
+        <footer>
+            <p>&copy; Juan Camilo Ortiz - Mayo09 - 2025</p>
+        </footer>
+    </section>
+    <div class="ratio ratio-4x3">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/PzdH2YJpJt0?si=teYtFqzpTuQwxNYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div></div>
+        <hr>
+
+    </div>
+    <hr>
+    <div class="card" style="width: 18rem;">
+  <img src="imagenes/instagram.png" width="100%" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Instagram</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 </body>
 </html>
